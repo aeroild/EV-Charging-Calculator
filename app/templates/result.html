@@ -1,0 +1,17 @@
+{% extends "templates/public_template.html" %}
+
+{% block title %} Setup saved {% endblock %}
+
+{% block main %}
+
+                
+    <h2>Startup time and charge time</h2>
+<h4>
+Charging must start at: {{ chargingstart }}
+<br>
+Charging will take: {{ chargingtime }}
+<br>
+Estimated range: {{ rangeestimate }} km
+</h4>
+{% endblock %}
+

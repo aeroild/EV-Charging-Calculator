@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+.venv
+
+# Flask
+instance/*
+!instance/.gitignore
+.webassets-cache
+
+#Flask.Python stack
+#Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+#Jupyter Notebook
+.ipynb_checkpoints
+static/.ipynb_checkpoints
+static/css/.ipynb_checkpoints
+templates/.ipynb_checkpoints
+templates/templates/.ipynb_checkpoints

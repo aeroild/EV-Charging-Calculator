@@ -1,0 +1,29 @@
+{% extends "templates/public_template.html" %}
+
+{% block title %} Setup saved {% endblock %}
+
+{% block main %}
+
+                
+    <h3>Parameters saved. Proceed to startup or charge time</h3>
+    <br>
+    <h4>
+    <p><b>Data about the car</b>
+    <p>Usable batterycapacity: {{ batteryusable }} kWh
+    <p>Chargingloss: {{ chargingloss }} %
+    <p>Consumption: {{ consumption }} kWh/100km
+    <br>
+    <br>        
+    <p><b>Data about the charging robot</b>
+    <p>Charging current: {{ chargingcurrent }} A
+    <p>Voltage: {{ voltage }} V
+    <p>Phases: {{ phases }}
+    <br>
+    <br>        
+    <p><b>Calculated data:</b>
+    <p>Charging speed: {{ chargingspeed }} kW
+    </h4>
+
+
+
+{% endblock %}
